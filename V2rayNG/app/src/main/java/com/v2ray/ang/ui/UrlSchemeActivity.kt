@@ -11,6 +11,7 @@ import com.v2ray.ang.extension.toast
 import com.v2ray.ang.extension.toastError
 import com.v2ray.ang.handler.AngConfigManager
 import com.v2ray.ang.ui.base.BaseComponentActivity
+import com.v2ray.ang.ui.main.BaseMainActivity
 import com.v2ray.ang.ui.main.MainActivity
 import com.v2ray.ang.util.LogUtil
 import kotlinx.coroutines.Dispatchers
@@ -25,7 +26,7 @@ class UrlSchemeActivity : BaseComponentActivity() {
         lifecycleScope.launch {
             val imported = importFromIntent(intent)
             startActivity(Intent(this@UrlSchemeActivity, MainActivity::class.java).apply {
-                if (imported) putExtra(MainActivity.EXTRA_REFRESH_AFTER_IMPORT, true)
+                if (imported) putExtra(BaseMainActivity.EXTRA_REFRESH_AFTER_IMPORT, true)
             })
             finish()
         }
