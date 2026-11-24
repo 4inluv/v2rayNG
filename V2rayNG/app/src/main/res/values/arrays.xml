@@ -141,7 +141,6 @@
         <item>auto</item>
         <item>English</item>
         <item>中文简体</item>
-        <item>中文繁體</item>
     </string-array>
 
 
@@ -149,7 +148,6 @@
         <item>auto</item>
         <item>en</item>
         <item>zh-rCN</item>
-        <item>zh-rTW</item>
     </string-array>
 
     <string-array name="mux_xudp_quic_value" translatable="false">
