@@ -35,6 +35,8 @@ android {
             }
         }
 
+        resourceConfigurations += listOf("en", "zh")
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
