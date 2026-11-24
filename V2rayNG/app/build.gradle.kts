@@ -35,8 +35,6 @@ android {
             }
         }
 
-        resourceConfigurations += listOf("en", "zh")
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -135,14 +133,7 @@ android {
         localeFilters += listOf(
             "en",
             "zh-rCN",
-            "zh-rTW",
-            "vi",
-            "ru",
-            "fa",
-            "ar",
-            "az",
-            "bn",
-            "bqi-rIR"
+            "zh-rTW"
         )
     }
 
