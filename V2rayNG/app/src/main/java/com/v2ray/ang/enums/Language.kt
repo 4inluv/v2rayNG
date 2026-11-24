@@ -7,14 +7,7 @@ enum class Language(val code: String, val languageTag: String) {
     AUTO("auto", ""),
     ENGLISH("en", "en"),
     CHINA("zh-rCN", "zh-CN"),
-    TRADITIONAL_CHINESE("zh-rTW", "zh-TW"),
-    VIETNAMESE("vi", "vi"),
-    RUSSIAN("ru", "ru"),
-    PERSIAN("fa", "fa"),
-    ARABIC("ar", "ar"),
-    AZERBAIJANI("az", "az"),
-    BANGLA("bn", "bn"),
-    BAKHTIARI("bqi-rIR", "bqi-IR");
+    TRADITIONAL_CHINESE("zh-rTW", "zh-TW");
 
     val locale: Locale?
         get() = languageTag.takeIf { it.isNotEmpty() }?.let(Locale::forLanguageTag)
@@ -45,13 +38,6 @@ enum class Language(val code: String, val languageTag: String) {
                     CHINA
                 }
 
-                "vi" -> VIETNAMESE
-                "ru" -> RUSSIAN
-                "fa" -> PERSIAN
-                "ar" -> ARABIC
-                "az" -> AZERBAIJANI
-                "bn" -> BANGLA
-                "bqi" -> BAKHTIARI
                 else -> AUTO
             }
         }
